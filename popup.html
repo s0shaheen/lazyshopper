@@ -1,0 +1,74 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>MASS SCRAPER</title>
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+
+  <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+  <script src="jquery.min.js"></script>
+  <script src="massSearcher.js"></script>
+  <!-- <script src="messageGenerator.js"></script> -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+  <h1>MASS SCRAPER</h1>
+
+  <input type="text" id="input" placeholder="Item to search">
+  <p id="itemConfirm">
+
+<div style="text-align:center">
+  <select id="category">
+    <option value="NULL">Choose a category</option>
+    <option value="electronics">Electronics</option>
+    <option value="home improvement">Home Improvement</option>
+    <option value="shoes">Shoes</option>
+  </select>
+</div>
+
+<div style="background color:white;text-align:center">
+  <button id="BUTTON_search">Search</button>
+</div>
+
+
+      <ul id="searchTerms">
+        <!-- Search terms added will be found here when inspecting the popup -->
+      </ul>
+
+
+
+      <!-- <br> -->
+        <!-- <div class="vertical-menu"> -->
+          <!-- <div id="nameForm">
+            <input id="INPUT_name" type="text" name="Your name?" placeholder="What's your name?" value="">
+            <button id="submitName" type="submit" name="button">Save!</button>
+          </div> -->
+
+          <!-- <hr>
+          <p id="notifications">blahblah</p>
+          <p><span id="weather">000</span> degrees F</p>
+          <p id="condition">weather goes here</p>
+          <p>Sunny has <span id="Sunny"></span> followers rn</p>
+          <hr>
+          <p>go get stuff done</p> -->
+
+      </div>
+  </div>
+</body>
+
+</html>
