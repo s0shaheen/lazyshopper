@@ -1,20 +1,19 @@
 {
   "manifest_version": 2,
 
-  "name": "MASS SCRAPER",
+  "name": "QUICK SHOP",
   "description": "Displays random info from the web",
   "version": "0.0.0.1",
   "author": "yournamehere",
 
   "browser_action": {
-    /* "default_icon": "icons/heart-icon-48.png", we don't have an icon yet */
+    "default_icon": "magnifyingGlass.png",
     "default_popup": "popup.html",
     "default_title": "MASS SCRAPER"
   },
 
-  /* "icons": { "16": "icons/heart-icon-16.png",
-             "48": "icons/heart-icon-48.png",
-             "128": "icons/heart-icon-128.png" }, */
+  "icons": {"48": "magnifyingGlass.png"
+    },
 
   "background": {
       "scripts": ["jquery.min.js", "massSearcher.js"],

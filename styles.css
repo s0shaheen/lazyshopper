@@ -1,10 +1,15 @@
 body {
   display: block;
-  background-color: #f2f9ff
+  background-color: #f9f8eb;
 }
 
 h1{
   font-size: 30px;
   text-align: center;
-  color: #003f75
+  color: #5c8d89;
+  font-family: 'Karla', sans-serif;
+}
+
+#category {
+  color: #5c8d89;
 }
